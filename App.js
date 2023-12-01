@@ -1,28 +1,66 @@
 import React, { Component, useState } from "react";
-import { View, Text, Image, Butto, Styles, StyleSheet } from "react-native";
+import { View, Text, TextInput, StyleSheet } from "react-native";
 
-//Alinhamentos e posicionamento
+//Recebendo dados Text Input
 function App(){
-
   return(
-    <View style = {{ 
-      flex: 1,
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'center' 
-      }}>
-      
-      <View style={{ height: 50, width:50 , backgroundColor: '#121212' }} ></View>
-
-      <View style={{ height: 50, width:50 , backgroundColor: 'red' }} ></View>
-
-      <View style={{ height: 50, width:50 , backgroundColor: 'green' }} ></View>
+    <View>
 
     </View>
   );
 }
 
 export default App;
+
+//Recebendo dados Text Input
+// function App(){
+
+//   const [nome, setNome] = useState('');
+
+//   function pegaNome(texto){
+//     if(texto.length > 0){
+//       setNome('Bem vindo ' + texto);
+//     }else{
+//       setNome('');
+//     }
+
+//   }
+
+//   return(
+//     <View style = {styles.container}>
+
+//       <TextInput
+//         style = {styles.input}
+//         placeholder="Digite seu Nome"
+//         onChangeText={(text) => pegaNome(text)}
+//       />
+
+//       <Text style = {styles.texto}> {nome} </Text>
+
+//     </View>
+//   );
+// }
+
+// const styles = StyleSheet.create({
+//   container:{
+//     flex: 1,
+//     marginTop: 50
+//   },
+//   input:{
+//     color: 'red',
+//     height: 45,
+//     borderWidth: 1,
+//     margin: 10,
+//     padding: 20,
+//     fontSize: 20
+//   },
+//   texto:{
+//     textAlign: 'center',
+//     fontSize: 25
+//   }
+// });
+
+// export default App;
 
 //Alinhamentos e posicionamento
 // function App(){
