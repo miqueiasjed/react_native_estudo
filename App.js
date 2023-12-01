@@ -1,25 +1,51 @@
 import React, { Component, useState } from "react";
 import { View, Text, Image, Butto, Styles, StyleSheet } from "react-native";
 
-//Tamanhos Fixos e Dinamicos
+//Alinhamentos e posicionamento
 function App(){
 
   return(
-    <View style = {{ flex: 1 }}>
+    <View style = {{ 
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center' 
+      }}>
       
-      <View style={{ height: 65, backgroundColor: '#121212' }} ></View>
+      <View style={{ height: 50, width:50 , backgroundColor: '#121212' }} ></View>
 
-      <View style={{ flex: 1, backgroundColor: '#DDD' }} >
-        <Text>Sou um texto</Text>
-      </View>
+      <View style={{ height: 50, width:50 , backgroundColor: 'red' }} ></View>
 
-      <View style={{ height: 65, backgroundColor: '#121212' }} ></View>
+      <View style={{ height: 50, width:50 , backgroundColor: 'green' }} ></View>
 
     </View>
   );
 }
 
 export default App;
+
+//Alinhamentos e posicionamento
+// function App(){
+
+//   return(
+//     <View style = {{ 
+//       flex: 1,
+//       flexDirection: 'row',
+//       alignItems: 'center',
+//       justifyContent: 'center' 
+//       }}>
+      
+//       <View style={{ height: 50, width:50 , backgroundColor: '#121212' }} ></View>
+
+//       <View style={{ height: 50, width:50 , backgroundColor: 'red' }} ></View>
+
+//       <View style={{ height: 50, width:50 , backgroundColor: 'green' }} ></View>
+
+//     </View>
+//   );
+// }
+
+// export default App;
 
 //Tamanhos Fixos e Dinamicos
 // function App(){
