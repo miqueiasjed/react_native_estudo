@@ -41,6 +41,26 @@ export default App;
 
 // export default App;
 
+//Tamanhos Fixos e Dinamicos
+// function App(){
+
+//   return(
+//     <View style = {{ flex: 1 }}>
+      
+//       <View style={{ height: 65, backgroundColor: '#121212' }} ></View>
+
+//       <View style={{ flex: 1, backgroundColor: '#DDD' }} >
+//         <Text>Sou um texto</Text>
+//       </View>
+
+//       <View style={{ height: 65, backgroundColor: '#121212' }} ></View>
+
+//     </View>
+//   );
+// }
+
+// export default App;
+
 //Grupos de Estilos
 // function App(){
 
