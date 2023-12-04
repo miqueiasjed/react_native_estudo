@@ -1,14 +1,59 @@
 import React, { Component, useState } from "react";
-import { View, Text, TextInput, StyleSheet } from "react-native";
+import { View, Text, TextInput, StyleSheet, Button } from "react-native";
 
-//Recebendo dados Text Input
+// Trabalhando com botao e input
 function App(){
+
+  const [nome, setNome] = useState('');
+  const [input, setInput] = useState('');
+
+  function entrar(){
+
+    if(input === ''){
+      Alert('Digite seu nome!');
+      return;
+    }
+
+    setNome('Bem vindo: ' + input);
+
+  }
+
   return(
-    <View>
+    <View style = {styles.container}>
+
+      <TextInput
+        style = {styles.input}
+        placeholder="Digite seu Nome"
+        onChangeText={(text) => setInput(text)}
+      />
+
+      <Text style = {styles.texto}> {nome} </Text>
+
+      <Button title="Entrar" onPress={entrar} />
 
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container:{
+    flex: 1,
+    marginTop: 50
+  },
+  input:{
+    color: 'red',
+    height: 45,
+    borderWidth: 1,
+    margin: 10,
+    padding: 20,
+    fontSize: 20
+  },
+  texto:{
+    textAlign: 'center',
+    fontSize: 25,
+    marginTop: 15
+  }
+});
 
 export default App;
 
